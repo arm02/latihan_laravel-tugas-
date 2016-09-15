@@ -20,3 +20,6 @@ Route::get('/view/{sekolah?}',function($sekolah){
 });
 Route::get('sekolah/{sekolah?}','HomeController@sekolah');
 Route::get('detail/{sekolah?}','HomeController@detail');
+Route::get('form','HomeController@input');
+Route::post('save','HomeController@save');
+Route::get('siswa','SiswaController@siswa');
